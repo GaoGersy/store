@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.piesat.project.mapper.SysExceptionInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.piesat.project.model.SysExceptionInfo">
+        <id column="id" property="id" />
+        <result column="error_type" property="errorType" />
+        <result column="error_stack_info" property="errorStackInfo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, error_type, error_stack_info
+    </sql>
+
+</mapper>
